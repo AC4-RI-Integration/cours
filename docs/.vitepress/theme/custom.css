@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* ─── Polices ─────────────────────────────────────────────────────────────── */
+:root {
+  --vp-font-family-base: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+/* ─── Couleurs officielles Cégep de Trois-Rivières ────────────────────────── */
+/* Bleu officiel : #092D74  |  Rouge officiel : #CF152D                        */
+/* Rouge-orangé  : #EF3832  |  Lilas          : #DFCCE4                        */
+:root {
+  /* Brand principal → bleu officiel */
+  --vp-c-brand-1: #092D74;
+  --vp-c-brand-2: #1A4490;
+  --vp-c-brand-3: #2E5EAE;
+  --vp-c-brand:       #092D74;
+  --vp-c-brand-light: #2E5EAE;
+  --vp-c-brand-lighter: #DFCCE4;
+  --vp-c-brand-lightest: #F2EDF7;
+  --vp-c-brand-dark:  #061D4E;
+  --vp-c-brand-dimm: rgba(9, 45, 116, 0.08);
+
+  /* Boutons */
+  --vp-button-brand-border:        #CF152D;
+  --vp-button-brand-text:          #ffffff;
+  --vp-button-brand-bg:            #CF152D;
+  --vp-button-brand-hover-border:  #EF3832;
+  --vp-button-brand-hover-text:    #ffffff;
+  --vp-button-brand-hover-bg:      #EF3832;
+  --vp-button-brand-active-border: #CF152D;
+  --vp-button-brand-active-text:   #ffffff;
+  --vp-button-brand-active-bg:     #CF152D;
+
+  /* Hero */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    120deg,
+    #092D74 30%,
+    #2E5EAE
+  );
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #092D74 50%,
+    #2E5EAE 50%
+  );
+}
+
+.img-bordered {
+  border: 2px solid #ddd;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.checklist { list-style: none !important; padding: 0 !important; margin: 0 !important; }
+.checklist li + li { margin-top: 0.45rem !important; }
+.checklist ul.checklist,
+.checklist li > ul.checklist { margin-top: 0.25rem !important; margin-left: 1.25rem !important;}
+.checklist label { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.35rem; border-radius: 0.35rem;}
+.checklist label:hover { background: rgba(0,0,0,0.04); }
+.checklist input[type="checkbox"] { margin: 0; width: 1rem; height: 1rem; accent-color: var(--vp-c-brand, #10b981); flex-shrink: 0; }
+.checklist .check-text { display: inline-block; color: #111827; font-weight: 500; }
+.checklist input[type="checkbox"]:checked + .check-text { text-decoration: line-through; color: #6b7280; opacity: 0.95; }
+.checklist input[type="checkbox"]:focus-visible { outline: 2px solid rgba(59,130,246,0.25); outline-offset: 2px; }
