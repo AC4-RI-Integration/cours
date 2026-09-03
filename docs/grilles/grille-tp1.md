@@ -2,6 +2,6 @@
 outline: deep
 ---
 
-# Grille d'évaluation — TP1
+# Grille d'évaluation - TP1
 
 *Contenu à venir.*

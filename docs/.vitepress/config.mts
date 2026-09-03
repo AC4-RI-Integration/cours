@@ -1,10 +1,16 @@
 import { defineConfig } from "vitepress";
 import { withMermaid } from "vitepress-plugin-mermaid";
+import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid(defineConfig({
 	base: "/cours/",
 	lang: "fr-CA",
+	markdown: {
+		config(markdown) {
+			markdown.use(tabsMarkdownPlugin);
+		},
+	},
 	vite: {
 		optimizeDeps: {
 			include: ["mermaid"],
@@ -16,7 +22,7 @@ export default withMermaid(defineConfig({
 	cleanUrls: true,
 	title: "582-AC4-RI",
 	description:
-		"Intégration d'interfaces Web structurées — Énoncés, grilles, calendrier et ressources",
+		"Intégration d'interfaces Web structurées - Énoncés, grilles, calendrier et ressources",
 	themeConfig: {
 		logo: "./logos/logo.png",
 
@@ -26,13 +32,13 @@ export default withMermaid(defineConfig({
 			{
 				text: "Modules",
 				items: [
-					{ text: "Module 1 — ", link: "/modules/01/" },
+					{ text: "Module 1 - Découvrir les outils d'intégration Web", link: "/modules/01/00-presentation" },
 				],
 			},
 			{
 				text: "Travaux",
 				items: [
-					{ text: "TP1 — ", link: "/travaux/tp1" },
+					{ text: "TP1 - ", link: "/travaux/tp1" },
 				],
 			},
 		],
@@ -49,13 +55,17 @@ export default withMermaid(defineConfig({
 				collapsed: false,
 				items: [
 					{
-						text: "Module 1 — ",
+						text: "Module 1 - Découvrir les outils d'intégration Web",
 						collapsed: true,
 						items: [
 							{
 								text: "Présentation",
 								link: "/modules/01/00-presentation",
 							},
+														{
+								text: "HTML et CSS",
+								link: "/modules/01/01-html-css",
+							}
 						],
 					},
 				],
@@ -64,21 +74,28 @@ export default withMermaid(defineConfig({
 				text: "Laboratoires",
 				collapsed: true,
 				items: [
-					{ text: "Lab 01 — ", link: "/labs/lab01" },
+					{ text: "Lab 01 - Configurations", link: "/labs/lab01" },
 				],
 			},
 			{
 				text: "Travaux pratiques",
 				collapsed: true,
 				items: [
-					{ text: "TP1 — ", link: "/travaux/tp1" },
+					{ text: "TP1 - ", link: "/travaux/tp1" },
 				],
 			},
 			{
 				text: "Grilles d'évaluation",
 				collapsed: true,
 				items: [
-					{ text: "Grille — TP1", link: "/grilles/grille-tp1" },
+					{ text: "Index des grilles", link: "/grilles/" },
+					{ text: "OA-1 - Outil d'édition Web", link: "/grilles/grille-oa-1" },
+					{ text: "OA-2 - Structure HTML", link: "/grilles/grille-oa-2" },
+					{ text: "OA-3 - Présentation visuelle", link: "/grilles/grille-oa-3" },
+					{ text: "OA-4 - Guide ou maquette", link: "/grilles/grille-oa-4" },
+					{ text: "OA-5 - Vérification", link: "/grilles/grille-oa-5" },
+					{ text: "OA-6 - Versionnage", link: "/grilles/grille-oa-6" },
+					{ text: "OA-7 - Organisation", link: "/grilles/grille-oa-7" },
 				],
 			},
 		],
