@@ -5,6 +5,8 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import './style.css'
 import './custom.css'
 import WeeklyTodo from "./components/WeeklyTodo.vue"
+import CodeSandbox from "./components/CodeSandbox.vue"
+import SandboxButton from "./components/SandboxButton.vue"
 
 
 export default {
@@ -17,5 +19,7 @@ export default {
   enhanceApp({ app, router, siteData }) {
     enhanceAppWithTabs(app);
     app.component("WeeklyTodo", WeeklyTodo);
+    app.component("CodeSandbox", CodeSandbox);
+    app.component("SandboxButton", SandboxButton);
   }
 }

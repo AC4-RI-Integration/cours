@@ -8,8 +8,9 @@ outline: deep
 
 | | |
 |---|---|
-| **Module** | [Module 1 - Découvrir les outils d'intégration Web](/modules/01/00-presentation) |
-| **Compétence** | HK31 - Élément 1 : Choisir un outil d'édition Web |
+| **Module** | [Module 1 - Premiers pas en intégration Web](/modules/01/00-presentation) |
+| **Objectif d'apprentissage** | OA-1 - Choisir et utiliser un outil d'édition Web |
+| **Éléments de compétence** | Élément 1 - Choisir un outil d'édition Web |
 | **Remise** | Formatif - aucune remise |
 
 ## Contexte
@@ -156,6 +157,8 @@ Ajoutez les sites suivants aux favoris de votre navigateur. Ils serviront à che
 | [W3C](https://www.w3.org/) | Organisme qui élabore les normes du Web. |
 | [Validateur HTML W3C](https://validator.w3.org/) | Vérification de la structure HTML. |
 | [Validateur CSS](https://www.cssportal.com/css-validator/) | Vérification des règles CSS. |
+| [W3Schools - HTML](https://www.w3schools.com/html/) | Tutoriels et référence pratique pour le HTML. |
+| [W3Schools - CSS](https://www.w3schools.com/css/) | Tutoriels et référence pratique pour le CSS. |
 
 Utilisez le raccourci `Ctrl+D` pour ajouter la page ouverte aux favoris. Placez-les dans un dossier nommé `Développement Web` pour les retrouver rapidement.
 
@@ -175,7 +178,7 @@ En utilisant [MDN Web Docs](https://developer.mozilla.org/fr/docs/Web/HTML/Refer
 ## Critères de réussite
 
 <ul class="checklist">
-  <li><label><input type="checkbox" /> <span class="check-text">VS Code est configuré avec les trois extensions requises</span></label></li>
+  <li><label><input type="checkbox" /> <span class="check-text">VS Code est configuré avec les extensions requises</span></label></li>
   <li><label><input type="checkbox" /> <span class="check-text">Le fichier <code>index.html</code> contient un squelette HTML valide</span></label></li>
   <li><label><input type="checkbox" /> <span class="check-text">La page s'affiche correctement dans Live Preview</span></label></li>
   <li><label><input type="checkbox" /> <span class="check-text">Les ressources pratiques sont ajoutées aux favoris du navigateur</span></label></li>

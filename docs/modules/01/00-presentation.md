@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Module 1 - Découvrir les outils d'intégration Web
+# Module 1 - Premiers pas en intégration Web
 
 ## Présentation du cours
 Bienvenu dans le cours d'intégration d'interfaces Web structurées! Mon nom est Olivier Tremblay et je serai votre professeur pour la session. Dans ce cours, vous apprendrez à intégrer des interfaces Web à l'aide de code informatique. Cela peut sembler intimidant à première vue, mais je vous accompagerez tout au long de votre parcours d'apprentissage.

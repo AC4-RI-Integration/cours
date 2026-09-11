@@ -86,6 +86,33 @@
   border-radius: 0.5rem;
 }
 
+.preview {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+/* Keep Monaco popups above the sandbox toolbar. */
+.overflowingContentWidgets,
+.monaco-hover,
+.colorpicker-widget,
+.monaco-colorpicker {
+  z-index: 3000 !important;
+}
+
+.vp-doc .preview h1,
+.vp-doc .preview h2,
+.vp-doc .preview h3,
+.vp-doc .preview h4,
+.vp-doc .preview h5,
+.vp-doc .preview h6 {
+  border-top: 0;
+  letter-spacing: normal;
+  line-height: 1.3;
+  margin: 1rem 0 0.5rem;
+  padding-top: 0;
+}
+
 .checklist { list-style: none !important; padding: 0 !important; margin: 0 !important; }
 .checklist li + li { margin-top: 0.45rem !important; }
 .checklist ul.checklist,
@@ -100,3 +127,7 @@
 .dark .checklist label:hover { background: rgba(255, 255, 255, 0.08); }
 .dark .checklist .check-text { color: var(--vp-c-text-1); }
 .dark .checklist input[type="checkbox"]:checked + .check-text { color: var(--vp-c-text-2); }
+
+.aside-curtain {
+  display: none;
+}

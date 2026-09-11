@@ -29,16 +29,18 @@ export default withMermaid(defineConfig({
 		nav: [
 			{ text: "Plan de cours", link: "/plan-cours/plan-de-cours" },
 			{ text: "Calendrier", link: "/plan-cours/calendrier-gr1109" },
+			{ text: "Bac à sable", link: "/sandbox" },
 			{
 				text: "Modules",
 				items: [
-					{ text: "Module 1 - Découvrir les outils d'intégration Web", link: "/modules/01/00-presentation" },
+					{ text: "Module 1 - Premiers pas en intégration Web", link: "/modules/01/00-presentation" },
+					{ text: "Module 2 - Créer une première page Web", link: "/modules/02/00-presentation" },
 				],
 			},
 			{
 				text: "Travaux",
 				items: [
-					{ text: "TP1 - ", link: "/travaux/tp1" },
+					{ text: "ES1 : Explorer les outils d'édition Web", link: "/travaux/tp1" },
 				],
 			},
 		],
@@ -48,6 +50,7 @@ export default withMermaid(defineConfig({
 				items: [
 					{ text: "Plan de cours", link: "/plan-cours/plan-de-cours" },
 					{ text: "Calendrier", link: "/plan-cours/calendrier-gr1109" },
+					{ text: "Bac à sable HTML et CSS", link: "/sandbox" },
 				],
 			},
 			{
@@ -55,7 +58,7 @@ export default withMermaid(defineConfig({
 				collapsed: false,
 				items: [
 					{
-						text: "Module 1 - Découvrir les outils d'intégration Web",
+						text: "Module 1 - Premiers pas en intégration Web",
 						collapsed: true,
 						items: [
 							{
@@ -68,6 +71,28 @@ export default withMermaid(defineConfig({
 							}
 						],
 					},
+					{
+						text: "Module 2 - Créer une première page Web",
+						collapsed: true,
+						items: [
+							{
+								text: "Présentation",
+								link: "/modules/02/00-presentation",
+							},
+							{
+								text: "HTML : structurer le contenu",
+								link: "/modules/02/01-html",
+							},
+							{
+								text: "CSS : présenter le contenu",
+								link: "/modules/02/02-css",
+							},
+							{
+								text: "Démonstration : intégrer une page Web",
+								link: "/modules/02/03-demo-page-web",
+							},
+						],
+					},
 				],
 			},
 			{
@@ -75,20 +100,21 @@ export default withMermaid(defineConfig({
 				collapsed: true,
 				items: [
 					{ text: "Lab 01 - Configurations", link: "/labs/lab01" },
+					{ text: "Lab 02 - Créer et styliser une première page Web", link: "/labs/lab02" },
 				],
 			},
 			{
-				text: "Travaux pratiques",
+				text: "Évaluations",
 				collapsed: true,
 				items: [
-					{ text: "TP1 - ", link: "/travaux/tp1" },
+					{ text: "TP1 - ES1 : Explorer les outils d'édition Web", link: "/travaux/tp1" },
 				],
 			},
 			{
 				text: "Grilles d'évaluation",
 				collapsed: true,
 				items: [
-					{ text: "Index des grilles", link: "/grilles/" },
+					{ text: "Grilles d'évaluation", link: "/grilles/" },
 					{ text: "OA-1 - Outil d'édition Web", link: "/grilles/grille-oa-1" },
 					{ text: "OA-2 - Structure HTML", link: "/grilles/grille-oa-2" },
 					{ text: "OA-3 - Présentation visuelle", link: "/grilles/grille-oa-3" },

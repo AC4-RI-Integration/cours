@@ -28,5 +28,5 @@ Votre niveau d’atteinte de chaque objectif sera évalué sur une échelle à c
 - [OA-7 - Organiser la structure de fichiers et collaborer](./grille-oa-7)
 
 ::: tip Lecture d'un énoncé
-Un énoncé indique les objectifs évalués dans le travail, le poids de chacun et le lien vers la grille correspondante. Les critères détaillés ne sont pas recopiés dans chaque énoncé.
+Un énoncé indique les objectifs évalués dans le travail, le poids de chacun et le lien vers la grille correspondante.
 :::
